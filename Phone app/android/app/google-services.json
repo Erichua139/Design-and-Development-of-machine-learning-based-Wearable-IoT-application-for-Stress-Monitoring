@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "859638991274",
+    "project_id": "capstone-416104",
+    "storage_bucket": "capstone-416104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859638991274:android:9f7f439e954c3593e843d3",
+        "android_client_info": {
+          "package_name": "com.example.stresscheck"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMghO6NrbGgYm5Xb7TchS9NyFNA2pjMr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859638991274:android:3cc6ffb166b99462e843d3",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMghO6NrbGgYm5Xb7TchS9NyFNA2pjMr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

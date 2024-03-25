@@ -1,0 +1,136 @@
+[debug] [2024-03-10T20:06:22.275Z] ----------------------------------------------------------------------
+[debug] [2024-03-10T20:06:22.288Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LOUBNA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-10T20:06:22.288Z] CLI Version:   13.4.1
+[debug] [2024-03-10T20:06:22.288Z] Platform:      win32
+[debug] [2024-03-10T20:06:22.289Z] Node Version:  v21.7.1
+[debug] [2024-03-10T20:06:22.289Z] Time:          Sun Mar 10 2024 16:06:22 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2024-03-10T20:06:22.289Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-10T20:06:22.307Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-10T20:06:22.307Z] > authorizing via signed-in user (moussallamloubna@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\LOUBNA\AndroidStudioProjects\untitled
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-10T20:06:48.428Z] > refreshing access token with scopes: []
+[debug] [2024-03-10T20:06:48.429Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-10T20:06:48.429Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-10T20:06:48.754Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-10T20:06:48.754Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-10T20:06:48.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-03-10T20:06:49.176Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-03-10T20:06:49.176Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project capstone-416104 (capstone) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-03-10T20:06:56.447Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-03-10T20:06:56.447Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/capstone-416104
+[debug] [2024-03-10T20:06:56.932Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firebasedatabase.googleapis.com 200
+[debug] [2024-03-10T20:06:56.933Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-03-10T20:06:56.934Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/capstone-416104 [none]
+[debug] [2024-03-10T20:06:57.249Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/capstone-416104 200
+[debug] [2024-03-10T20:06:57.249Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/capstone-416104 {"projectId":"capstone-416104","projectNumber":"859638991274","displayName":"capstone","name":"projects/capstone-416104","resources":{"hostingSite":"capstone-416104"},"state":"ACTIVE","etag":"1_7259f275-5cd3-44ae-899a-071dfa7f4111"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2024-03-10T20:07:15.113Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firestore.googleapis.com [none]
+[debug] [2024-03-10T20:07:15.113Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firestore.googleapis.com x-goog-quota-user=projects/capstone-416104
+[debug] [2024-03-10T20:07:15.507Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firestore.googleapis.com 200
+[debug] [2024-03-10T20:07:15.508Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/firestore.googleapis.com [omitted]
+[debug] [2024-03-10T20:07:15.509Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default) [none]
+[debug] [2024-03-10T20:07:15.826Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default) 200
+[debug] [2024-03-10T20:07:15.826Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default) {"name":"projects/capstone-416104/databases/(default)","uid":"ba1bd40a-2672-4f90-b0d9-172c68ed04d0","createTime":"2024-03-08T05:59:19.813808Z","updateTime":"2024-03-08T05:59:19.813808Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-03-10T19:07:14.184894Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"ILvg38S/6oQDMIy+w7SH5IQD"}
+[debug] [2024-03-10T20:07:15.826Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-03-10T20:07:15.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-10T20:07:15.827Z] > authorizing via signed-in user (moussallamloubna@gmail.com)
+[debug] [2024-03-10T20:07:15.827Z] [iam] checking project capstone-416104 for permissions ["firebase.projects.get"]
+[debug] [2024-03-10T20:07:15.828Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions [none]
+[debug] [2024-03-10T20:07:15.829Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions x-goog-quota-user=projects/capstone-416104
+[debug] [2024-03-10T20:07:15.829Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-10T20:07:16.009Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions 200
+[debug] [2024-03-10T20:07:16.009Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-03-10T20:07:24.427Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/capstone-416104/releases pageSize=10&pageToken=
+[debug] [2024-03-10T20:07:24.756Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/capstone-416104/releases 200
+[debug] [2024-03-10T20:07:24.756Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/capstone-416104/releases {"releases":[{"name":"projects/capstone-416104/releases/cloud.firestore","rulesetName":"projects/capstone-416104/rulesets/260bd99d-dec3-4fbf-b551-618b3f6737dd","createTime":"2024-03-08T06:40:11.137595Z","updateTime":"2024-03-08T06:40:11.137595Z"}]}
+[debug] [2024-03-10T20:07:24.756Z] Found ruleset: projects/capstone-416104/rulesets/260bd99d-dec3-4fbf-b551-618b3f6737dd
+[debug] [2024-03-10T20:07:24.757Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/capstone-416104/rulesets/260bd99d-dec3-4fbf-b551-618b3f6737dd [none]
+[debug] [2024-03-10T20:07:24.927Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/capstone-416104/rulesets/260bd99d-dec3-4fbf-b551-618b3f6737dd 200
+[debug] [2024-03-10T20:07:24.927Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/capstone-416104/rulesets/260bd99d-dec3-4fbf-b551-618b3f6737dd [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-03-10T20:07:30.180Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-03-10T20:07:30.185Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-03-10T20:07:30.473Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-03-10T20:07:30.473Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/capstone-416104/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2024-03-10T20:07:30.473Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-03-10T20:07:30.473Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/capstone-416104/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2024-03-10T20:07:30.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-10T20:07:30.475Z] > authorizing via signed-in user (moussallamloubna@gmail.com)
+[debug] [2024-03-10T20:07:30.476Z] [iam] checking project capstone-416104 for permissions ["firebase.projects.get"]
+[debug] [2024-03-10T20:07:30.476Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions [none]
+[debug] [2024-03-10T20:07:30.476Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions x-goog-quota-user=projects/capstone-416104
+[debug] [2024-03-10T20:07:30.476Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-10T20:07:30.722Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions 200
+[debug] [2024-03-10T20:07:30.722Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/capstone-416104:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-10T20:07:30.722Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-03-10T20:07:30.722Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/capstone-416104
+[debug] [2024-03-10T20:07:30.725Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-03-10T20:07:30.725Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/capstone-416104
+[debug] [2024-03-10T20:07:31.092Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/cloudfunctions.googleapis.com 200
+[debug] [2024-03-10T20:07:31.092Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-03-10T20:07:31.105Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/runtimeconfig.googleapis.com 200
+[debug] [2024-03-10T20:07:31.105Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/capstone-416104/services/runtimeconfig.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2024-03-10T20:07:54.197Z] Running command with virtualenv: command="C:\Users\LOUBNA\AndroidStudioProjects\untitled\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2024-03-10T20:07:54.323Z] Error: spawn "C:\Users\LOUBNA\AndroidStudioProjects\untitled\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\LOUBNA\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\LOUBNA\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\LOUBNA\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+[error] 
+[error] Error: An unexpected error has occurred.
