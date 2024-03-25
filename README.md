@@ -1,2 +1,17 @@
 # Design-and-Development-of-machine-learning-based-Wearable-IoT-application-for-Stress-Monitoring
-2024 Capstone Project at Ontario Tech U.
+This project was done as a 2024 Capstone Project at Ontario Tech U.<br> 
+This repository contains the code of a machine-learning-based wearable application for stress monitoring. In a time where stress-related health issues are on the rise the need for an accurate proactive health monitoring solution is critical. Leveraging the recently available warble technology and a machine learning module, our application offers a new approach to stress management by providing users with accurate monitoring and recommendations to alleviate stress. 
+## Machine Learning Module
+### Contents
+Located in the "ML Module Code" is the code to create the module, the module itself, as well as some evaluations. Due to the size constraints of this repo we were not able to include the dataset for the training and testing of the module. To run the model you will need to first download the dataset with the python notebook. The data set can be found here: [https://www.eti.uni-siegen.de/ubicomp/home/datasets/icmi18/index.html.en?lang=en](url). 
+#### rmssd_model_xg.joblib
+This is the model itself that can be used to make predictions. The output will result in either a 1 or 0. 0 represents the stressed class and 1 represents not stressed.
+#### Stress_Detection_Training_RMSSD_SDNN
+This is a python note book containing the code for data processing, training, testing, and evaluation. Once again to run this code you will need the data set first.
+#### evaluation_report_rt
+This is a txt file with the testing evaluation saved, this is for easy viewing.
+### Design 
+Our stress monitoring module will make predictions on the user's stress levels and report points of identified stress. The module will use health data taken from the smartwatch and use it to make accurate predictions. The module will then send its predictions on the data back to the phone app where the user will be able to view the results.<br>
+For our module we have chosen to use a preexisting public dataset for training, “Wearable Stress and Affect Detection”[1]. This dataset is in-depth and allows us to use multiple different metrics to make our predictions, this allows us to make a flexible system that can adapt to different wearable technologies. For the health metrics that we will use to make our predictions, the module will use heart rate variance (HRV). HRV is currently the best metric that is used to identify stress.
+The model itself is designed using an Extreme Gradient Boost(XGBoost) model, the flexibility and performance of this type of model suit the scope of our project. The XGBoost model provides quick performance and accurate results for non-linear relationships in data; this will be important for using HRV as a health metric. Another reason the model is designed using XGBoost is that it can easily handle sparse data or data with holes, this is important as in the user's day there could be multiple reasons why the watch would not be able to read the user data. The last major benefit that the XGBoost model provides is that it combats overfitting, this allows the model to be able to generalize to new and unseen data and adapt to new users.The stress monitoring module integrates various health matrics with a focus on HRV using the XGBoost model for its flexibility, performance and resilience against overfitting, this will ensure accurate stress predictions and adaptability to different wearable technologies and also user scenarios
+
